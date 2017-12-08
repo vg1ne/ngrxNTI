@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import {containers as coreContainers, AppComponent} from "./containers";
+import { containers as coreContainers } from './containers';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [coreContainers]
+  imports: [CommonModule],
+  declarations: [coreContainers],
 })
 export class CoreModule {
   static forRoot() {
@@ -17,3 +15,4 @@ export class CoreModule {
     };
   }
 }
+
