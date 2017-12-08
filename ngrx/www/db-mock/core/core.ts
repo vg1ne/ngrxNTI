@@ -1,7 +1,3 @@
-import {primary} from "./primary-information";
-import {generalQuestions} from "./general-questions";
+export const coreData = [
 
-export const siteProfileData = [
-  primary,
-  generalQuestions
 ];
