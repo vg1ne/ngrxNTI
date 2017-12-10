@@ -10,6 +10,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { CoreModule } from './core/core.module';
 import { AppComponent } from './core/containers';
+import {routes} from "./app.routes";
+import {CalendarModule} from "./calendar/calendar.module";
 
 @NgModule({
   declarations: [],
@@ -18,8 +20,10 @@ import { AppComponent } from './core/containers';
     BrowserAnimationsModule,
     HttpClientModule,
 
+    CalendarModule,
+
     StoreModule.forRoot({ routerReducer: routerReducer }),
-    // RouterModule.forRoot([]),
+    RouterModule.forRoot(routes),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
     }),
