@@ -9,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "nodemon"
+    "server": "nodemon",
+    "doc": "compodoc -p tsconfig.json",
+    "doc:run": "compodoc -s tsconfig.json"
   },
   "private": true,
   "dependencies": {
