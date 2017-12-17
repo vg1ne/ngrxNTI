@@ -5,3 +5,16 @@ export function applyMixins(derivedCtor: any, baseCtors: any[]) {
     });
   });
 }
+
+// @simpleDecorator
+// @decoratorWithParam(11)
+// @decoratorReplaceConstructor
+// export class TestClass {
+//   name: string;
+//
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
+//
+// const test = new TestClass('bla');
